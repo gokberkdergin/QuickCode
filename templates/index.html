@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code Generator</title>
+</head>
+<body>
+    <h1>QR Code Generator</h1>
+    <form action="/generate_qr/{{ qr_data }}" method="get">
+        <label for="data">Data:</label>
+        <input type="text" name="data" id="data">
+        <input type="submit" value="Generate QR">
+    </form>
+</body>
+</html>
