@@ -9,6 +9,7 @@
         <h1>Generated QR Code</h1>
         <div class="qr-image">
             <img src="{{ url_for('static', filename='qrcodes/qrcode.png') }}" alt="QR Code">
+            <a href="{{ url_for('static', filename='qrcodes/qrcode.png') }}" download="qrcode.png" class="download-button">Download QR</a>
         </div>
     </div>
 </body>
