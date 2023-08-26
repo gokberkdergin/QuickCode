@@ -2,13 +2,21 @@
 <html>
 <head>
     <title>QR Code Generator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>QR Code Generator</h1>
-    <form action="/generate_qr/{{ qr_data }}" method="get">
-        <label for="data">Data:</label>
-        <input type="text" name="data" id="data">
-        <input type="submit" value="Generate QR">
-    </form>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        <form action="/generate_qr/" method="get">
+            <label for="data">Data:</label>
+            <input type="text" name="data" id="data" required>
+            <button type="submit">Generate QR</button>
+        </form>
+        {% if img_path %}
+        <div class="qr-image">
+            <img src="{{ img_path }}" alt="QR Code">
+        </div>
+        {% endif %}
+    </div>
 </body>
 </html>

@@ -10,7 +10,7 @@ def index():
 
 @app.route('/generate_qr/')
 def generate_qr():
-    data = request.args.get('data')
+    data = request.args.get('data') 
     if data:
         qr = qrcode.QRCode(
             version=1,
