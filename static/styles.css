@@ -46,13 +46,10 @@ button {
     font-size: 16px;
 }
 
-
-/* Diğer stil tanımlamaları */
-
 .qr-image {
     text-align: center;
     margin-top: 20px;
-    position: relative; /* Görüntü ve butonun konumunu belirlemek için */
+    position: relative;
 }
 
 .download-button {
@@ -65,14 +62,11 @@ button {
     cursor: pointer;
     font-size: 14px;
     position: absolute;
-    bottom: 0; /* Sağ alt köşeye yerleştir */
-    right: 0; /* Sağ alt köşeye yerleştir */
+    bottom: 0;
+    right: 0;
     margin: 10px;
     text-decoration: none;
 }
-
-/* Diğer stil tanımlamaları */
-
 
 img {
     max-width: 100%;
